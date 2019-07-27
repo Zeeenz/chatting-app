@@ -1,0 +1,36 @@
+{
+  "name": "chattingapp",
+  "version": "1.0.0",
+  "description": "Live chatting app",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Samarth",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "ip": "^1.1.5",
+    "mongodb": "^2.2.33",
+    "mongoose": "^5.6.6",
+    "path": "^0.12.7",
+    "socket.io": "^2.2.0"
+  },
+  "engines":{
+    "node":"10.16.0"
+  },
+  "config": {
+    "server": {
+      "port": 8080
+    },
+    "db": {
+      "url": "mongodb://localhost:27017/chatdb"
+    }
+  }
+}
